@@ -168,14 +168,410 @@ WHATSAPP
 <div style="clear: both"></div><br/></td> </tr></table>
 
 <!------------------------------------------------------> 
-<BR/><HR/>
+<HR NOSHADE SIZE="3" color="red">
+<HR NOSHADE SIZE="5" color="#00ff00">
+<HR NOSHADE SIZE="8" color="#00ccff">
 <!------------------------------------------------------> 
 <!------------------------------------------------------> 
 <!------------------------------------------------------> <!------------------------------------------------------> 
 <!------------------------------------------------------> 
 <!------------------------------------------------------> 
+<!--------------------------------CALENDÁRIO---------------------------------->
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var day_of_week = new Array('<FONT COLOR="#FF0000">DOM</FONT>','Seg','Ter','Qua','Qui','Sex','Sab');
+var month_of_year = new Array('Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro');
+var Calendar = new Date();
+var year = Calendar.getYear();       // Retorna o ano
+var month = Calendar.getMonth();    // Retorna mes (0-11)
+var today = Calendar.getDate();     // Retorna dias (1-31)
+var weekday = Calendar.getDay();   // Retorna dias (1-31)
+var DAYS_OF_WEEK = 7;    // "constant" para o numero de dias na semana
+var DAYS_OF_MONTH = 31;    // "constant" para o numero de dias no mes
+var cal;    // Usado para imprimir na tela
+Calendar.setDate(1);    // Comecar o calendario no dia '1'
+Calendar.setMonth(month);    // Comecar o calendario com o mes atual
+var TR_start = '<TR>';
+var TR_end = '</TR>';
+var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=5 BGCOLOR=#40FF00 BORDERCOLOR=#FFFF00><TR><TD WIDTH=20><B><CENTER>';
+var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+var TD_start = '<TD WIDTH="30"><CENTER>';
+var TD_end = '</CENTER></TD>';
+cal =  '<TABLE BORDER=5 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=#FF00FF><TR><TD>';
+cal += '<TABLE BORDER=4 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#2E64FE"><CENTER><B>';
+cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+cal += TR_start;
+for(index=0; index < DAYS_OF_WEEK; index++)
+{
+if(weekday == index)
+cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+else
+cal += TD_start + day_of_week[index] + TD_end;
+}
+cal += TD_end + TR_end;
+cal += TR_start;
+for(index=0; index < Calendar.getDay(); index++)
+cal += TD_start + '  ' + TD_end;
+for(index=0; index < DAYS_OF_MONTH; index++)
+{
+if( Calendar.getDate() > index )
+{
+  week_day =Calendar.getDay();
+  if(week_day == 0)
+  cal += TR_start;
+  if(week_day != DAYS_OF_WEEK)
+  {
+  var day  = Calendar.getDate();
+  if( today==Calendar.getDate() )
+  cal += highlight_start + day + highlight_end + TD_end;
+  else
+  cal += TD_start + day + TD_end;
+  }
+  if(week_day == DAYS_OF_WEEK)
+  cal += TR_end;
+  }
+  Calendar.setDate(Calendar.getDate()+1);
+}
+cal += '</TD></TR></TABLE></TABLE>';
+//  MOSTRAR CALENDARIO
+document.write(cal);
+//  End -->
+</SCRIPT>
+<!---------------------------------CORPO-------------------------------->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2><FONT COLOR="#FF00FF">BEM VINDOS</FONT></h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="PROCURA AQUI..." title="Type in a name">
+
+<ul id="myUL">
+<!--------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------->
+<iframe src="https://drive.google.com/file/d/1HYocq_XQl84jMp-g7VHhCK0yOvWF9Ldk/preview" width="640" height="480" allow="autoplay"></iframe>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=1HYocq_XQl84jMp-g7VHhCK0yOvWF9Ldk
+" target="_blank" download="
+https://docs.google.com/uc?export=download&id=1HYocq_XQl84jMp-g7VHhCK0yOvWF9Ldk
+"><button class="button">
+LEMBRAR
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
 
 
+<!--------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+<li><a href="
+https://docs.google.com/uc?export=download&id=
+" target="_blank" download="
+NOME
+"><button class="button">
+NOME
+</button></a></li>
+<!--------------------------------------------------------------------------->
+
+
+
+<!--------------------------------------------------------------------------->
+</ul>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+</html>
+<!----------------------------------SOMBRA H1------------------------------>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<!----------------------------------SOMBRA H2------------------------------>
+<html>
+<head>
+<style>
+h2 {
+  color: #0000FF;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<!-----------------------------------BOTÃO-------------------------->
+<html>
+<head>
+<style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #DF0101;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #3e8e41}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<!-----------------------------------COR PAG------------------------------>
+<body bgcolor="#F7FE2E">
+<body bgcolor="rgb(0,0,0)">
+<body bgcolor="black">
 
 
 
@@ -192,7 +588,9 @@ WHATSAPP
 <!------------------------------------------------------> 
 <!------------------------------------------------------> 
 <!------------------------------------------------------> 
-<BR/><HR/>
+<HR NOSHADE SIZE="3" color="red">
+<HR NOSHADE SIZE="5" color="#00ff00">
+<HR NOSHADE SIZE="8" color="#00ccff">
 <html>
 <a href="#top"><H3>VOLTAR AO TOPO</H3></a>
 </html>
